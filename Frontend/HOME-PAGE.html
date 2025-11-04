@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="width=device-width, initial-scale=1.0">
+  <title>kalid</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+    }
+
+    header hr {
+      border: 1px solid yellow;
+    }
+
+    .side-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      margin: 50px auto;
+      flex-wrap: wrap; 
+      max-width: 1200px;
+    }
+
+    
+    .side-container img {
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+   
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .links-container h2 {
+      color: yellow;
+      margin-bottom: 10px;
+    }
+
+    .links-container h3 {
+      color: yellow;
+      margin: 6px 0;
+    }
+
+    .links-container a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links-container a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .form-container p {
+      color: yellow;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .form-container input {
+      margin: 6px 0;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .form-container button {
+      margin: 5px 0;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-container button[type="submit"] {
+      background-color: yellow;
+      color: black;
+    }
+
+    .form-container button[type="reset"] {
+      background-color: #555;
+      color: white;
+    }
+
+    .form-container button:hover {
+      opacity: 0.8;
+    }
+
+    
+    @media (max-width: 800px) {
+      .side-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/haramayalogo.png" alt="my University logo">
+    <hr><hr>
+  </header>
+
+  <section>
+    <center><h1><u><i>Where does it come from?</i></u></h1></center>
+    <p style="padding: 0 50px;">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. 
+      It has roots in a piece of classical Latin literature from 45 BC, making it over <sup>2000</sup> years old.
+      <br><em>Richard McClintock</em>, a Latin professor at <strike>Hampden-Sydney College in Virginia</strike>, 
+      discovered the undoubtable source. <big>Lorem Ipsum</big> comes from sections 1.10.32 and 1.10.33 of 
+      "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in <sub>45 BC</sub>.
+    </p>
+
+    <!-- FLEX: image + links + form -->
+    <div class="side-container">
+      <img src="images/blog girl.webp" alt="Girl">
+
+      <div class="links-container">
+        <h2>Let's join</h2>
+        <h3><a href="https://www.facebook.com" target="_blank">Facebook</a></h3>
+        <h3><a href="https://www.instagram.com" target="_blank">Instagram</a></h3>
+        <h3><a href="https://www.telegram.org" target="_blank">Telegram</a></h3>
+        <h3><a href="https://www.youtube.com" target="_blank">YouTube</a></h3>
+        <h3><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></h3>
+      </div>
+
+      <div class="form-container">
+        <p>To see more</p>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <input type="password" placeholder="Enter your password">
+          <input type="text" placeholder="Enter your first name">
+          <input type="text" placeholder="Enter your last name">
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
